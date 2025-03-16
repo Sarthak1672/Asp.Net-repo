@@ -1,0 +1,15 @@
+﻿@model OrderProcessingApp.Models.Order
+
+@{
+    ViewData["Title"] = "Order Summary";
+}
+
+<div class="card shadow-lg p-4 text-center" data-aos="fade-up">
+    <h2 class="mb-4">Order Summary</h2>
+
+    <p><strong>Order Amount:</strong> $@Model.Amount</p>
+    <p><strong>Discount Applied:</strong> $@Model.Discount</p>
+    <p><strong>Final Total:</strong> $@Model.FinalTotal</p>
+
+    <a href="/Order/Index" class="btn btn-success mt-3">Place Another Order</a>
+</div>
